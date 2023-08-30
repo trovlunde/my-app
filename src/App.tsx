@@ -1,18 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+/*import logo from './logo.svg';*/
+import logo from "./riverdeer.svg";
+import "./App.css";
 
+/*App definisjon, funksjonalitet*/
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <a
+          /*Legger til styling*/
           className="App-link"
           href="https://reactjs.org"
+          /*Åpner ny fane*/
           target="_blank"
           rel="noopener noreferrer"
         >

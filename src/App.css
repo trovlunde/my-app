@@ -2,17 +2,20 @@
   text-align: center;
 }
 
+/*Formatere logo*/
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/*Får logo til å rotere*/
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin 10s linear;
   }
 }
 
+/*Bakgrunn*/
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,16 +24,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
+/*Style link*/
 .App-link {
   color: #61dafb;
 }
 
+/*Gjør og noe med spin, hastighet*/
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateX(500px) translateY(500px);
   }
   to {
     transform: rotate(360deg);
