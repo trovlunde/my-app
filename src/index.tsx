@@ -1,20 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import TableCreater from './TableCreater';
-import FetchPoke from './Weather';
-import Starships from './Darkside'
-import Appa from './Weather';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import PopupTesting from "./pages/PopupTesting";
+import RandomUserDisp from "./pages/RandomUserDisp";
+
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <App />
-    <Appa/>
   </React.StrictMode>
 );
 

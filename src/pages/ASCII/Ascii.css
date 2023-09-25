@@ -1,0 +1,35 @@
+/* App.css */
+/* App.css */
+.container {
+    flex: auto;
+    position: relative;
+    width: 370px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .ascii-art,
+  .original-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left; /* Set the transform origin to top left */
+    transition: transform 0.3s ease-in-out; /* Use transform for smoother transitions */
+  }
+  
+  .container:hover .ascii-art {
+    transform: scale(1); /* Scale down on hover */
+  }
+  
+  .container:hover .original-image {
+    transform: scale(1); /* Scale up on hover */
+  }
+
+  .container:not(:hover) .original-image {
+    opacity: 0;
+  }
+
+  pre {
+    font-family: "courier new", courier, monospace;
+    font-size: 3.2px;
+ }

@@ -1,0 +1,92 @@
+.label {
+  font-size: 1.2em;
+  font-family: "Work Sans", sans-serif;
+  color: #125cdd;
+  user-select: none;
+  margin: 100px;
+}
+
+.example {
+  width: 80%;
+  height: min-content;
+  stroke: #66a7bb;
+  padding: 4%;
+  border: 1px solid #0949b8;
+}
+
+.circle {
+    stroke-dasharray:10;
+    animation: dash 5s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 822;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .pen {
+    stroke-dasharray: 280 280;
+    stroke-dashoffset: 280;
+    animation-duration: 2s;
+    animation-name: draw;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 280;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .map {
+    fill: none;
+    stroke: #FFF;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+  .animate {
+    -webkit-animation: dash 5s linear alternate;
+    animation: dash 5s linear alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  .path {
+    fill: aliceblue;
+    stroke-dasharray: 100;
+    animation: dash 5s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes dash {
+      from {
+          stroke-dashoffset: 500; fill: #FFF !important;
+          fill: rgb(196, 59, 59);
+      }
+      to {
+          stroke-dashoffset: 0; fill: #FFF !important;
+          fill: white;
+      }
+  } 
+  @-webkit-keyframes dash {
+      from {
+          stroke-dashoffset: 500;
+          fill: rgb(207, 145, 145);
+      }
+      to {
+          stroke-dashoffset: 0;
+          fill: white;
+      }
+  }
+
