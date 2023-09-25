@@ -168,4 +168,4 @@ export default function RandomUserDisp() {
       </div>
     </div>
   );
-}
+};

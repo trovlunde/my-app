@@ -7,8 +7,6 @@ import RandomUserDisp from "./pages/RandomUserDisp";
 import FancyAnimal from "./pages/FancyAnimal";
 import Marquee from "react-fast-marquee";
 import Logo from "./pages/Logo";
-import Blob from "./pages/Blob";
-import BlobFollow from "./pages/Blob";
 
 function App() {
   return (

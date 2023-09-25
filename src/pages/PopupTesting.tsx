@@ -1,6 +1,5 @@
 import "./PopupTesting.css";
 import React from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import Ascii from "./ASCII/Ascii";
 

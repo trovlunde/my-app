@@ -1,9 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import './Ascii.css';
-import AsciiArt from './AsciiArt';
 import OriginalImage from './OgImage';
 import { motion, AnimatePresence } from 'framer-motion';
-import { waitFor } from '@testing-library/react';
 
 function Ascii() {
   const asciiArtText = `

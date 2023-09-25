@@ -1,54 +1,10 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import "./Logo.css";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function Logo() {
   const [draw1, setDraw1Index] = useState(0);
   const [draw2, setDraw2Index] = useState(0);
-
-  useEffect(() => {
-    const updateDraw = () => {
-      setDraw1Index(0);
-      setDraw2Index(0);
-    };
-    console.log(draw1);
-    updateDraw();
-  }, [draw1]);
-
-  useEffect(() => {
-    const updateDraw = () => {
-      setDraw1Index(0);
-      setDraw2Index(0);
-    };
-    console.log(draw1);
-    updateDraw();
-  }, [draw2]);
-
-  function stuff(num: string) {
-    return 1;
-  }
-
-  const container = {
-    hidden: { rotate: 90 },
-    show: {
-      rotate: 0,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const itemA = {
-    hidden: { scale: 0, top: 100 },
-    show: { scale: 1, top: 30 },
-  };
-
-  const itemB = {
-    hidden: { scale: 0, top: 200 },
-    show: { scale: 1, top: 80 },
-  };
 
   return (
     <div className="example">
